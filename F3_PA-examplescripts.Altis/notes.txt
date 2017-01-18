@@ -1,0 +1,14 @@
+Mission making
+-Opening, saving mission
+-testing mission
+
+F3 Framework
+-gear script
+-group markers
+-ace integration (medical + modules)
+-spectator 
+-ai caching 
+-join in progress (teleport)
+-radios
+
+AI spawn scripts

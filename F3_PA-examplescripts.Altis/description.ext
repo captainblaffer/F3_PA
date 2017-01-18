@@ -78,6 +78,13 @@ corpseRemovalMaxTime = 300; //seconds
 
 // ============================================================================================
 
+// GVS CUSTOM SCRIPT
+
+#include "gvs\colors_include.hpp"
+#include "gvs\control_include.hpp"
+#include "gvs\stc_include.hpp"
+
+// ============================================================================================
 
 // F3 - Start of Notifications block.
 
@@ -330,7 +337,7 @@ class Params
 
 	class pa_param_cscaching
 	{
-		title = "PA - Enable Clientside caching?  Set F3 caching to 0 if enabled  NOTE: Disable this when spawning AI with Zeus";
+		title = "PA - Enable Clientside caching?  Set F3 caching to 0 if enabled. NOTE: Disable this when spawning AI with Zeus";
 		values[] = {0,1};
 		texts[] = {"Off","On"};
 		default = 1;
@@ -572,7 +579,68 @@ class CfgFunctions
 			file = "pa";
 			class ClientsideCaching{};
 		};
+		class Supply
+		{
+			file = "pa";
+			class Supply{};
+		};
 	};
+	
+	class gdsn {
+		#include "rooftopStaticWeapons\functions.hpp"
+	};
+	
+	class MCCfr
+	{
+		tag = "mccfr";
+		
+		class general
+		{
+			file = "mccfr";
+			
+			class makeUnitsArray
+			{
+				description = "returns a unit array consist of all the units from the given function and simulation in format [_cfgclass,_vehicleDisplayName].";
+			};
+			
+		};
+		
+		class cas
+		{
+			file = "mccfr";
+
+			class createPlane
+			{
+				description = "create a flying plane from the given type and return the plane , pilot and group.";
+			};
+			
+			
+		};
+		
+		class ai
+		{
+			file = "mccfr";
+
+			class paratroops 
+			{
+				description = "Contorol the paratroop reinforcement spawn.";
+			};
+		};
+	};
+	
+	class LV
+	{		
+		class AIspawns
+		{
+			file = "LV";
+			class spawnAI_buildingAuto{};
+			class taskPatrol{};
+			class taskPatrolTown{};
+			class taskPatrolV{};
+		};
+	};
+	
+	#include "p\config.hpp"
 };
 
 
