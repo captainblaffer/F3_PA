@@ -94,9 +94,16 @@ _max = _height select 1;
 if (count _tmp > 0) then {
 {_x setpos (_tmp select (floor (random (count _tmp))));
 _x allowfleeing 0;
-_x setUnitPos "UP";
-//_x forceSpeed 0;
+_x forceSpeed 0;
+dostop _x;
+_x disableAI "TARGET";
 commandstop _x;
+[units _grp]spawn{
+	sleep 10;
+	{
+	_x setUnitPos "UP";
+	}foreach (_this select 0);
+};
 _x setformdir random (360);
 //debugmarkers
 /*_mname = format ["btestmrk_%1",_x];
