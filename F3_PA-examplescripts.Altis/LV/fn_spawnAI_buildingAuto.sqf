@@ -163,12 +163,6 @@ _x forceSpeed 0;
 dostop _x;
 _x disableAI "TARGET";
 commandstop _x;
-[units _grp]spawn{
-	sleep 10;
-	{
-	_x setUnitPos "UP";
-	}foreach (_this select 0);
-};
 
 //debugmarkers
 //_mname = format ["btestmrk_%1",_x];
@@ -203,6 +197,11 @@ switch (_gearOpt) do {
 } foreach units _grp;
 
 (units _grp) execVM "f\assignGear\f_assignGear_AI.sqf";
-
+[units _grp]spawn{
+	sleep 10;
+	{
+	_x setUnitPos "UP";
+	}foreach (_this select 0);
+};
 };
 _grp
