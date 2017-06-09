@@ -49,6 +49,7 @@
 //		v_car		- car/4x4
 //		v_tr		- truck
 //		v_ifv		- ifv
+//		v_hel		- heli
 //
 //		crate_small	- small ammocrate
 //		crate_med	- medium ammocrate
@@ -896,7 +897,28 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
 		_unit addItemCargoGlobal [_firstaid,6];
 	};
-
+// CARGO: HELO -
+	case "v_hel":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addbackpackCargoGlobal ["B_Parachute",4];
+		_unit addWeaponCargoGlobal [_carbine, 1];
+		_unit addMagazineCargoGlobal [_riflemag, 4];
+		_unit addMagazineCargoGlobal [_glriflemag, 4];
+		_unit addMagazineCargoGlobal [_carbinemag, 4];
+		_unit addMagazineCargoGlobal [_armag, 2];
+		_unit addMagazineCargoGlobal [_ratmag, 1];
+		_unit addMagazineCargoGlobal [_grenade, 2];
+		_unit addMagazineCargoGlobal [_smokegrenade, 2];
+		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
+		_unit addMagazineCargoGlobal [_glmag, 2];
+		_unit addMagazineCargoGlobal [_glsmokewhite, 2];
+		_unit addItemCargoGlobal [_firstaid,4];
+	};
+	
 // CRATE: Small, ammo for 1 fireteam
 	case "crate_small":
 {

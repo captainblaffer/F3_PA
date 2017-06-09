@@ -572,6 +572,11 @@ class CfgFunctions
 			file = "pa";
 			class ClientsideCaching{};
 		};
+		class CscGroupmanagement
+		{
+			file = "pa";
+			class CscGroupmanagement{};
+		};
 	};
 };
 

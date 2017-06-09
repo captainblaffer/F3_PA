@@ -579,12 +579,26 @@ class CfgFunctions
 			file = "pa";
 			class ClientsideCaching{};
 		};
+		class CscGroupmanagement
+		{
+			file = "pa";
+			class CscGroupmanagement{};
+		};
 		class Supply
 		{
 			file = "pa";
 			class Supply{};
 		};
 	};
+	
+	class MURK
+	{
+		class nearPlayerGround
+		{
+			file = "murk";
+			class nearPlayerGround{};
+		};
+	}
 	
 	class gdsn {
 		#include "rooftopStaticWeapons\functions.hpp"

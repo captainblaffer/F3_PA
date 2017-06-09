@@ -1,29 +1,29 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=0.125;
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=9;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1754;
+		nextID=1842;
 	};
 	class MarkerIDProvider
 	{
-		nextID=118;
+		nextID=125;
 	};
 	class LayerIndexProvider
 	{
-		nextID=170;
+		nextID=221;
 	};
 	class Camera
 	{
-		pos[]={14659.126,84.487503,16456.379};
-		dir[]={-0.14039248,-0.43945697,0.88722599};
-		up[]={-0.068684146,0.89826316,0.43405741};
-		aside[]={0.98771209,6.0244929e-009,0.1562932};
+		pos[]={10192.775,222.54996,14898.233};
+		dir[]={0.75287002,-0.63756847,-0.16345423};
+		up[]={0.6230548,0.77038997,-0.13527004};
+		aside[]={-0.21216783,-2.4674227e-007,-0.9772442};
 	};
 };
 binarizationWanted=0;
@@ -92,14 +92,14 @@ class AddonsMetaData
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
 			className="A3_Soft_F_Beta";
 			name="Arma 3 Beta - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item2
 		{
@@ -113,21 +113,21 @@ class AddonsMetaData
 			className="A3_Soft_F_EPC";
 			name="Arma 3 Win Episode - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item4
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item5
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item6
 		{
@@ -141,35 +141,35 @@ class AddonsMetaData
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item8
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item9
 		{
 			className="A3_Air_F";
 			name="Arma 3 Alpha - Aircrafts";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item10
 		{
 			className="A3_Air_F_EPC";
 			name="Arma 3 Win Episode - Aircrafts";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item11
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item12
 		{
@@ -183,7 +183,7 @@ class AddonsMetaData
 			className="A3_Static_F";
 			name="Arma 3 Alpha - Turrets";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item14
 		{
@@ -211,14 +211,14 @@ class AddonsMetaData
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item18
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item19
 		{
@@ -267,7 +267,7 @@ class AddonsMetaData
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item26
 		{
@@ -309,14 +309,14 @@ class AddonsMetaData
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item32
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item33
 		{
@@ -337,7 +337,7 @@ class AddonsMetaData
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -433,7 +433,7 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="ReviveRequiredItemsFakConsumed";
+			property="ReviveMedicSpeedMultiplier";
 			expression="false";
 			class Value
 			{
@@ -443,10 +443,10 @@ class CustomAttributes
 					{
 						type[]=
 						{
-							"BOOL"
+							"SCALAR"
 						};
 					};
-					value=1;
+					value=2;
 				};
 			};
 		};
@@ -471,25 +471,6 @@ class CustomAttributes
 		};
 		class Attribute5
 		{
-			property="ReviveMedicSpeedMultiplier";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=2;
-				};
-			};
-		};
-		class Attribute6
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -507,7 +488,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute7
+		class Attribute6
 		{
 			property="ReviveForceRespawnDelay";
 			expression="false";
@@ -526,7 +507,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute8
+		class Attribute7
 		{
 			property="ReviveBleedOutDelay";
 			expression="false";
@@ -545,7 +526,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute9
+		class Attribute8
 		{
 			property="ReviveDelay";
 			expression="false";
@@ -564,7 +545,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute10
+		class Attribute9
 		{
 			property="ReviveUnconsciousStateMode";
 			expression="false";
@@ -583,7 +564,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute11
+		class Attribute10
 		{
 			property="ReviveRequiredItems";
 			expression="false";
@@ -602,7 +583,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=12;
+		nAttributes=11;
 	};
 	class Category1
 	{
@@ -654,7 +635,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=300;
+		items=334;
 		class Item0
 		{
 			dataType="Marker";
@@ -5505,6 +5486,7 @@ class Mission
 				};
 			};
 			id=277;
+			atlOffset=0.0097122192;
 		};
 		class Item71
 		{
@@ -5524,6 +5506,7 @@ class Mission
 			};
 			id=280;
 			type="B_UAV_02_F";
+			atlOffset=0.0097122192;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5657,7 +5640,7 @@ class Mission
 			};
 			id=283;
 			type="B_Heli_Light_01_armed_F";
-			atlOffset=-0.00017166138;
+			atlOffset=-0.37913322;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5700,7 +5683,7 @@ class Mission
 			};
 			id=284;
 			type="B_Plane_CAS_01_F";
-			atlOffset=-5.9127808e-005;
+			atlOffset=-0.33807564;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6579,7 +6562,7 @@ class Mission
 			};
 			id=374;
 			type="RHS_Stinger_AA_pod_D";
-			atlOffset=3.9496918;
+			atlOffset=3.9496365;
 		};
 		class Item124
 		{
@@ -7106,7 +7089,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0.5;
+							value=0.2;
 						};
 					};
 				};
@@ -8036,7 +8019,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=1.5;
 						};
 					};
 				};
@@ -8055,7 +8038,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0.75;
 						};
 					};
 				};
@@ -10316,7 +10299,6 @@ class Mission
 					};
 					id=1227;
 					type="Land_ToiletBox_F";
-					atlOffset=7.6293945e-006;
 				};
 				class Item2
 				{
@@ -11048,7 +11030,6 @@ class Mission
 					};
 					id=1266;
 					type="Land_ToiletBox_F";
-					atlOffset=7.6293945e-006;
 				};
 				class Item41
 				{
@@ -12437,16 +12418,1044 @@ class Mission
 			type="mil_dot";
 			id=1753;
 		};
+		class Item300
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13535.039,5.6464272,14923.647};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="call{if (local this) then {this setvariable [""UAV"",UAV1]; this addaction [""Enter UAV"", ""pa\UAV_enter.sqf""];}}";
+						description="enter & exit UAV script ";
+						isPlayable=1;
+					};
+					id=1761;
+					type="B_crew_F";
+					atlOffset=-4.7683716e-007;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1760;
+			atlOffset=-4.7683716e-007;
+		};
+		class Item301
+		{
+			dataType="Trigger";
+			position[]={9512.9863,120.10836,15069.148};
+			angle=4.9280396;
+			class Attributes
+			{
+				name="murkspawn1";
+				onActivation="murkspawn1 setVariable [""murk_spawn"",true,true];";
+				sizeA=100;
+				sizeB=100;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isServerOnly=1;
+			};
+			id=1783;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item302
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=8;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10250.698,95.627174,14862.63};
+						angles[]={0,2.0020149,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="call{nul = [this,true,100,3] execVM ""murk\murk_building.sqf"";}";
+						aiRadarUsage=-1589829088;
+					};
+					id=1785;
+					type="O_Soldier_TL_F";
+					atlOffset=0.00019836426;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10246.013,106.47691,14839.234};
+						angles[]={0,5.2068491,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+						aiRadarUsage=368846922;
+					};
+					id=1786;
+					type="O_Soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10243.505,100.84384,14821.574};
+						angles[]={0,4.1678371,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+						aiRadarUsage=1560444095;
+					};
+					id=1787;
+					type="O_Soldier_GL_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10272.062,106.4642,14827.21};
+						angles[]={0,1.6938781,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=1788;
+					type="O_Soldier_LAT_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10281.694,101.19379,14837.571};
+						angles[]={0,0.51772296,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+						aiRadarUsage=368846922;
+					};
+					id=1789;
+					type="O_Soldier_AR_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10261.929,106.46915,14817.419};
+						angles[]={0,2.6094098,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+						aiRadarUsage=368846922;
+					};
+					id=1790;
+					type="O_Soldier_AR_F";
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10214.993,105.31557,14838.583};
+						angles[]={0,1.9824957,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+						aiRadarUsage=368846922;
+					};
+					id=1791;
+					type="O_Soldier_AR_F";
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10283.646,95.052795,14815.263};
+						angles[]={0,6.1038442,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+						aiRadarUsage=368846922;
+					};
+					id=1792;
+					type="O_Soldier_AR_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1784;
+			atlOffset=0.00019836426;
+		};
+		class Item303
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9354.5586,106.15772,15156.005};
+						angles[]={0,1.1938355,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="call{ nul = [this,true,""repeated"",4,15,"""",120,300] execVM ""murk\murk_spawn.sqf"";}";
+					};
+					id=1794;
+					type="O_Soldier_TL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9351.75,104.68952,15149.516};
+						angles[]={0,1.1938355,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+					};
+					id=1795;
+					type="O_Soldier_AR_F";
+					atlOffset=1.5258789e-005;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9348.0693,105.03638,15158.813};
+						angles[]={0,1.1938355,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=1796;
+					type="O_Soldier_GL_F";
+					atlOffset=7.6293945e-006;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9348.9414,103.82615,15143.026};
+						angles[]={0,1.1938355,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=1797;
+					type="O_Soldier_LAT_F";
+					atlOffset=7.6293945e-006;
+				};
+				class Item4
+				{
+					dataType="Waypoint";
+					position[]={9518.0352,120.40558,15058.715};
+					type="SeekAndDestroy";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=1798;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1793;
+		};
+		class Item304
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10187.819,100.00439,14949.665};
+						angles[]={0,2.5038495,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						description="murk building";
+						isPlayable=1;
+					};
+					id=1800;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1799;
+		};
+		class Item305
+		{
+			dataType="Marker";
+			position[]={9053.9355,277.87988,15933.22};
+			name="marker_114";
+			text="murk_spawn";
+			type="mil_warning";
+			id=1801;
+			atlOffset=136.99611;
+		};
+		class Item306
+		{
+			dataType="Marker";
+			position[]={9053.9355,0,15878.22};
+			name="marker_115";
+			text="place units in editor with waypoints, turn them into patrolling or attacking dynamic AI (spawn when player enters trigger)";
+			type="mil_dot";
+			id=1802;
+			atlOffset=-137.64835;
+		};
+		class Item307
+		{
+			dataType="Marker";
+			position[]={9093.6963,226.69839,15617.928};
+			name="marker_116";
+			text="0: Unit name (this)";
+			type="mil_dot";
+			id=1803;
+			atlOffset=136.99612;
+		};
+		class Item308
+		{
+			dataType="Marker";
+			position[]={9096.6963,220.34372,15564.928};
+			name="marker_117";
+			text="1: Should the group use f3 assigngear? (true/false)";
+			type="mil_dot";
+			id=1804;
+			atlOffset=136.99611;
+		};
+		class Item309
+		{
+			dataType="Marker";
+			position[]={9095.6963,216.65103,15516.928};
+			name="marker_118";
+			text="2: spawn type (""once"",""repeated"",""wave"" and ""reset"")";
+			type="mil_dot";
+			id=1805;
+			atlOffset=136.99612;
+		};
+		class Item310
+		{
+			dataType="Marker";
+			position[]={9093.6963,212.83395,15465.928};
+			name="marker_119";
+			text="3: (optional): NUMBER - spawn lives (the amount of time the unit respawns, or wave number)";
+			type="mil_dot";
+			id=1806;
+			atlOffset=136.99612;
+		};
+		class Item311
+		{
+			dataType="Marker";
+			position[]={9093.6963,208.14865,15417.928};
+			name="marker_120";
+			text="4: (optional): NUMBER - spawn delay";
+			type="mil_dot";
+			id=1807;
+			atlOffset=136.99611;
+		};
+		class Item312
+		{
+			dataType="Marker";
+			position[]={9053.6963,240.11752,15666.928};
+			name="marker_121";
+			text="Arguments:";
+			type="mil_dot";
+			id=1808;
+			atlOffset=136.99611;
+		};
+		class Item313
+		{
+			dataType="Marker";
+			position[]={9055.0244,258.75626,15814.816};
+			name="marker_122";
+			text="To use you need a group with a waypoint";
+			type="mil_dot";
+			id=1809;
+			atlOffset=136.99612;
+		};
+		class Item314
+		{
+			dataType="Marker";
+			position[]={9054.8203,252.95447,15775.001};
+			name="marker_123";
+			text="Add the script command entered in the group leader's init";
+			type="mil_dot";
+			id=1810;
+			atlOffset=136.99612;
+		};
+		class Item315
+		{
+			dataType="Marker";
+			position[]={9055.4824,249.42746,15731.166};
+			name="marker_124";
+			text="and sync a waypoint set up like the example to the leader.";
+			type="mil_dot";
+			id=1811;
+			atlOffset=136.99612;
+		};
+		class Item316
+		{
+			dataType="Marker";
+			position[]={9090.8359,203.67938,15371.309};
+			name="marker_125";
+			text="5 (optional): STRING - init string called for the leader of the group";
+			type="mil_dot";
+			id=1812;
+			atlOffset=136.99612;
+		};
+		class Item317
+		{
+			dataType="Marker";
+			position[]={9089.9375,201.59058,15315.497};
+			name="marker_126";
+			text="6 (optional): NUMBER-  will start removal sequence of all dead group members after X seconds (default 120)";
+			type="mil_dot";
+			id=1813;
+			atlOffset=136.99612;
+		};
+		class Item318
+		{
+			dataType="Marker";
+			position[]={9089.999,63.830296,15267.879};
+			name="marker_127";
+			text="7 (optional): NUMBER-  will auto-delete units when waypoint reached if no player is within X distance (default 0 = DISABLED)";
+			type="mil_dot";
+			id=1814;
+		};
+		class Item319
+		{
+			dataType="Marker";
+			position[]={9151.667,57.490742,14736.751};
+			name="marker_128";
+			text="murk_building";
+			type="mil_warning";
+			id=1815;
+			atlOffset=-3.8146973e-006;
+		};
+		class Item320
+		{
+			dataType="Marker";
+			position[]={9151.667,55.599838,14681.751};
+			name="marker_129";
+			text="place units in editor, turn them into  dynamic stationary building campers (spawn/despawn when players nearby)";
+			type="mil_dot";
+			id=1816;
+		};
+		class Item321
+		{
+			dataType="Marker";
+			position[]={9189.4453,79.477112,14438.307};
+			name="marker_130";
+			text="0: Unit name (this)";
+			type="mil_dot";
+			id=1817;
+			atlOffset=29.233025;
+		};
+		class Item322
+		{
+			dataType="Marker";
+			position[]={9192.4453,78.402344,14385.307};
+			name="marker_131";
+			text="1: Should the group use f3 assigngear? (true/false)";
+			type="mil_dot";
+			id=1818;
+			atlOffset=29.233025;
+		};
+		class Item323
+		{
+			dataType="Marker";
+			position[]={9191.4453,49.877537,14337.307};
+			name="marker_132";
+			text="2: spawn distance, how close players must come to spawn them";
+			type="mil_dot";
+			id=1819;
+			atlOffset=3.8146973e-006;
+		};
+		class Item324
+		{
+			dataType="Marker";
+			position[]={9189.4453,46.85593,14286.307};
+			name="marker_133";
+			text="3: (optional): NUMBER - once x units are remaining have them move out and patrol outside";
+			type="mil_dot";
+			id=1820;
+			atlOffset=3.8146973e-006;
+		};
+		class Item325
+		{
+			dataType="Marker";
+			position[]={9189.4453,7.402832,14238.307};
+			name="marker_134";
+			text="4: (optional): STRING - init string called for the leader of the group";
+			type="mil_dot";
+			id=1821;
+			atlOffset=-36.814365;
+		};
+		class Item326
+		{
+			dataType="Marker";
+			position[]={9149.4453,78.361092,14487.307};
+			name="marker_135";
+			text="Arguments:";
+			type="mil_dot";
+			id=1822;
+			atlOffset=28.782253;
+		};
+		class Item327
+		{
+			dataType="Marker";
+			position[]={9152.7568,52.813301,14618.348};
+			name="marker_136";
+			text="To use you need a group placed nicely in a compound";
+			type="mil_dot";
+			id=1823;
+		};
+		class Item328
+		{
+			dataType="Marker";
+			position[]={9152.5518,51.490303,14578.532};
+			name="marker_137";
+			text="now add the script command entered in the group leader's init";
+			type="mil_dot";
+			id=1824;
+			atlOffset=3.8146973e-006;
+		};
+		class Item329
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9444.7568,120.16172,15158.804};
+						angles[]={0,2.5038495,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						description="murk spawn";
+						isPlayable=1;
+					};
+					id=1830;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1829;
+		};
+		class Item330
+		{
+			dataType="Marker";
+			position[]={13530.001,0,14933.549};
+			name="marker_138";
+			text="Control multiple UAVs, or have two players in one uav";
+			type="mil_dot";
+			id=1831;
+			atlOffset=-5.6523757;
+		};
+		class Item331
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13535.775,5.6437626,14918.55};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="call{if (local this) then {this setvariable [""UAV"",UAV1]; this addaction [""Enter UAV"", ""pa\UAV_enter.sqf""];}}";
+						description="enter & exit UAV script ";
+						isPlayable=1;
+					};
+					id=1833;
+					type="B_crew_F";
+					atlOffset=0.0069999695;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1832;
+			atlOffset=0.0069999695;
+		};
+		class Item332
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13527.175,7.1491241,14919.808};
+				angles[]={0.0079936078,0,6.2658539};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				name="UAV1";
+				reportRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=1755;
+			type="B_UAV_02_dynamicLoadout_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item333
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13531.83,8.1056309,14915.177};
+						angles[]={0.0079936078,0,6.2658539};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						name="UAV1D";
+					};
+					id=1756;
+					type="B_UAV_AI";
+					atlOffset=2.4576974;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13531.83,8.1056309,14915.177};
+						angles[]={0.0079936078,0,6.2658539};
+					};
+					side="West";
+					class Attributes
+					{
+						name="UAV1G";
+					};
+					id=1757;
+					type="B_UAV_AI";
+					atlOffset=2.4576974;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=1756;
+						item1=1755;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=1757;
+						item1=1755;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=1754;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=3;
+			nextID=4;
 		};
 		class Links
 		{
-			items=3;
+			items=4;
 			class Item0
 			{
 				linkID=0;
@@ -12475,6 +13484,16 @@ class Mission
 				class CustomData
 				{
 					type="RandomStart";
+				};
+			};
+			class Item3
+			{
+				linkID=3;
+				item0=1794;
+				item1=1783;
+				class CustomData
+				{
+					type="Sync";
 				};
 			};
 		};

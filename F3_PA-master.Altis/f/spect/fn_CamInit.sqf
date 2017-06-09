@@ -34,6 +34,16 @@ if(_isJIP) then
 	uiSleep 2;
 	["F_ScreenSetup"] call BIS_fnc_blackIn;
 };
+// disable PA clientside caching
+if (!isnil "handle_pacaching") then {
+	[handle_pacaching1] call CBA_fnc_removePerFrameHandler;
+	[handle_pacaching2] call CBA_fnc_removePerFrameHandler;
+	{
+		{
+			_x hideobject false; _x enablesimulation true;
+		}foreach units _x;
+	}foreach allgroups; 
+};
 // Create a Virtual Unit to act as our player to make sure we get to keep Draw3D
 if(isNil "f_cam_VirtualCreated") then
 {

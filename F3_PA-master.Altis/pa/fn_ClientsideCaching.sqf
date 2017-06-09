@@ -49,7 +49,7 @@ _checkDist = getObjectViewDistance select 0; //base check dist on player setting
 		
 		};
 		
-	}foreach allgroups; 
+	}foreach pa_AIGroups; 
 	
 	
 /*

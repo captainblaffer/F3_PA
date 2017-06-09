@@ -70,8 +70,9 @@ if(isServer) then {
 
 // ====================================================================================
 
-// F3 - Automatic Body Removal
+// F3 - Automatic Body Removal 
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// PA NOTE: Don't enable this, feature is replaced by A3 bodyremoval defined in description.ext
 
 // f_var_removeBodyDelay = 180;
 // f_var_removeBodyDistance = 500;
@@ -121,7 +122,7 @@ if(isServer) then {
 // F3 - Assign Gear AI
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
- [] execVM "f\assignGear\f_assignGear_AI.sqf";
+// [] execVM "f\assignGear\f_assignGear_AI.sqf";
 
 // ====================================================================================
 
@@ -142,7 +143,7 @@ if(isServer) then {
 // F3 - Join Group Action
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-[false] execVM "f\groupJoin\f_groupJoinAction.sqf";
+//[false] execVM "f\groupJoin\f_groupJoinAction.sqf";
 
 // ====================================================================================
 
@@ -212,13 +213,15 @@ if (hasInterface) then {
 
 // PA - Clientside caching
 // run this instead of F3 - AI unit caching (server side)
-if (!isServer && hasInterface) then { //run on all player clients incl. player host and excl. headless clients
+if (!isserver && hasInterface) then { //run on all player clients incl. player host and excl. headless clients
 
 	[]spawn {
 	waitUntil {sleep 0.1; !isNull player}; 
 	waitUntil{!isNil "pa_param_cscaching"};
 		if (pa_param_cscaching == 1) then {
-			[{[] call pa_fnc_ClientsideCaching;}, 6] call CBA_fnc_addPerFrameHandler;
+			handle_pacaching2 = [{[] call pa_fnc_CscGroupmanagement;}, 30] call CBA_fnc_addPerFrameHandler;
+			waitUntil{!isNil "pa_AIGroups"};
+			handle_pacaching1 = [{[] call pa_fnc_ClientsideCaching;}, 6] call CBA_fnc_addPerFrameHandler;
 		};
 	};
 };
@@ -242,7 +245,6 @@ if (!isServer && hasInterface) then { //run on all player clients incl. player h
 
 
 //GVS and MCCFR fastrope init
-
 execVM "gvs\gvs_init.sqf";
 
 if (!hasInterface || isServer) then {
