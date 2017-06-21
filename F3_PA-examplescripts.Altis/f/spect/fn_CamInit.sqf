@@ -35,7 +35,7 @@ if(_isJIP) then
 	["F_ScreenSetup"] call BIS_fnc_blackIn;
 };
 // disable PA clientside caching
-if (!isnil "handle_pacaching") then {
+if (!isnil "handle_pacaching1") then {
 	[handle_pacaching1] call CBA_fnc_removePerFrameHandler;
 	[handle_pacaching2] call CBA_fnc_removePerFrameHandler;
 	{
