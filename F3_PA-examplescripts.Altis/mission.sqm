@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=129;
 	class ItemIDProvider
 	{
-		nextID=1842;
+		nextID=1850;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=221;
+		nextID=255;
 	};
 	class Camera
 	{
-		pos[]={10192.775,222.54996,14898.233};
-		dir[]={0.75287002,-0.63756847,-0.16345423};
-		up[]={0.6230548,0.77038997,-0.13527004};
-		aside[]={-0.21216783,-2.4674227e-007,-0.9772442};
+		pos[]={13838.102,87.442116,15217.521};
+		dir[]={0.16774166,-0.20404336,0.96449202};
+		up[]={0.034962881,0.97896147,0.20103069};
+		aside[]={0.98522079,1.9965228e-008,-0.17134704};
 	};
 };
 binarizationWanted=0;
@@ -80,13 +80,15 @@ addons[]=
 	"A3_Structures_F_EPB_Items_Vessels",
 	"A3_Structures_F_Mil_BagFence",
 	"A3_Structures_F_EPA_Items_Tools",
-	"A3_Structures_F_Items_Electronics"
+	"A3_Structures_F_Items_Electronics",
+	"A3_Characters_F_Exp",
+	"A3_Air_F_Exp_VTOL_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=36;
+		items=37;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -336,6 +338,13 @@ class AddonsMetaData
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item36
+		{
+			className="A3_Air_F_Exp";
+			name="Arma 3 Apex - Aircrafts";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -635,7 +644,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=334;
+		items=339;
 		class Item0
 		{
 			dataType="Marker";
@@ -5683,7 +5692,7 @@ class Mission
 			};
 			id=284;
 			type="B_Plane_CAS_01_F";
-			atlOffset=-0.33807564;
+			atlOffset=-0.20048904;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6482,7 +6491,7 @@ class Mission
 			};
 			id=369;
 			type="rhs_Kornet_9M133_2_msv";
-			atlOffset=3.9458027;
+			atlOffset=3.9458256;
 		};
 		class Item119
 		{
@@ -12436,8 +12445,8 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{if (local this) then {this setvariable [""UAV"",UAV1]; this addaction [""Enter UAV"", ""pa\UAV_enter.sqf""];}}";
-						description="enter & exit UAV script ";
+						init="call{_meh1 = this spawn{sleep 1;sleep 1;if (hasInterface) then { waitUntil {!isNull player}; if (local _this) then {player setvariable [""UAV"",UAV1]; player addaction [""Enter UAV"", ""pa\UAV_enter.sqf""];};};}}";
+						description="enter & exit UAV script";
 						isPlayable=1;
 					};
 					id=1761;
@@ -12643,7 +12652,7 @@ class Mission
 						angles[]={0,0.51772296,0};
 					};
 					side="East";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -12652,6 +12661,7 @@ class Mission
 					};
 					id=1789;
 					type="O_Soldier_AR_F";
+					atlOffset=6.0326767;
 				};
 				class Item5
 				{
@@ -12681,7 +12691,7 @@ class Mission
 						angles[]={0,1.9824957,0};
 					};
 					side="East";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -12690,6 +12700,7 @@ class Mission
 					};
 					id=1791;
 					type="O_Soldier_AR_F";
+					atlOffset=9.9565659;
 				};
 				class Item7
 				{
@@ -13267,7 +13278,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{if (local this) then {this setvariable [""UAV"",UAV1]; this addaction [""Enter UAV"", ""pa\UAV_enter.sqf""];}}";
+						init="call{_meh1 = this spawn{sleep 1;sleep 1;if (hasInterface) then { waitUntil {!isNull player}; if (local _this) then {player setvariable [""UAV"",UAV1]; player addaction [""Enter UAV"", ""pa\UAV_enter.sqf""];};};}}";
 						description="enter & exit UAV script ";
 						isPlayable=1;
 					};
@@ -13445,6 +13456,228 @@ class Mission
 				};
 			};
 			id=1754;
+		};
+		class Item334
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13905.93,115.7991,15447.342};
+						angles[]={0,0.25858799,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						name="blackfishcasD";
+					};
+					id=1843;
+					type="B_T_Pilot_F";
+					atlOffset=106.72584;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13905.93,115.7991,15447.342};
+						angles[]={0,0.25858799,0};
+					};
+					side="West";
+					class Attributes
+					{
+						name="blackfishcasG";
+					};
+					id=1844;
+					type="B_T_Pilot_F";
+					atlOffset=106.72584;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=1843;
+						item1=1845;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=1844;
+						item1=1845;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={1};
+						};
+					};
+				};
+			};
+			id=1842;
+			atlOffset=106.67399;
+		};
+		class Item335
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13906.429,122.60566,15447.837};
+				angles[]={0,0.25858799,0};
+			};
+			side="West";
+			flags=2;
+			class Attributes
+			{
+				init="call{this lockTurret [[0],true];" \n "this lockdriver true; " \n "if (isserver) then {[(getpos this),this] execVM ""pa\Blackfish_setwp.sqf""};}";
+				name="blackfishcas";
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=1845;
+			type="B_T_VTOL_01_armed_F";
+			atlOffset=106.67399;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit"",""Medikit""],[10,1]],[[],[]],[[""ToolKit""],[1]],[[""B_Parachute""],[4]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item336
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13854.658,4.4929447,15290.28};
+						angles[]={0,0.3262195,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="call{_meh1 = this spawn{sleep 1;sleep 1;if (hasInterface) then { waitUntil {!isNull player}; if (local _this) then {player setvariable [""UAV"",blackfishcas];  player addaction [""BLACKFISH GUNNING"", ""pa\Blackfish_enter.sqf""]; click = true; player addAction [""BLACKFISH WAYPOINTING"", ""pa\Blackfish_selectwp.sqf"",nil,0];};};};}";
+						description="blackfish CAS";
+						isPlayable=1;
+					};
+					id=1847;
+					type="B_Soldier_A_F";
+					atlOffset=-4.7683716e-007;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1846;
+			atlOffset=-4.7683716e-007;
+		};
+		class Item337
+		{
+			dataType="Marker";
+			position[]={13766.998,2.21875,15468.762};
+			name="marker_139";
+			text="Blackfish CAS UAV";
+			type="mil_warning";
+			id=1848;
+			atlOffset=-11.950669;
+		};
+		class Item338
+		{
+			dataType="Marker";
+			position[]={13765.625,-0.63476563,15386.583};
+			name="marker_140";
+			text="for info how to use, see pa\blackfish_selectwp.sqf";
+			type="mil_dot";
+			id=1849;
+			atlOffset=-9.3225422;
 		};
 	};
 	class Connections
