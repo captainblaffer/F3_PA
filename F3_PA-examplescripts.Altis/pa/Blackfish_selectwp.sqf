@@ -24,10 +24,11 @@
 	6. add in blackfish init field:
 	this setobjecttexture [0,""];this setobjecttexture [1,""];this setobjecttexture [2,""];this setobjecttexture [3,""];
 	
-	7. Place a c-130-j and add in its init field:
-	if (isserver) then {this attachto [blackfishcas,[0,-1.5,-6.5]]; this engineon true; this lock true};
+	7. Place a c-130-j -- WITH PILOT -- IN THE SKY -- and add in its init field:
+	 if (isserver) then {this attachto [blackfishcas,[0,-1.5,-6.5]]; this engineon true; this lock true; {deletevehicle _x}foreach (crew this)}; 
 	
 	8. Rename the addaction strings in UAV operator's init, replacing BLACKFISH with AC-130
+	   e.g. "BLACKFISH - WAYPOINTING" becomes "AC-130 - WAYPOINTING"
 */
 
 if (!click) exitWith {openMap true;};
