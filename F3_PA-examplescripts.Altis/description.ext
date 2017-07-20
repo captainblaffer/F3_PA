@@ -589,6 +589,11 @@ class CfgFunctions
 			file = "pa";
 			class Supply{};
 		};
+		class DisableInheritedVelocity
+		{
+			file = "pa";
+			class DisableInheritedVelocity{};
+		};
 	};
 	
 	class MURK

@@ -2,7 +2,7 @@
 	to use blackfish cas feature 
 	1. add this in your UAV operator's init field
 		_meh1 = this spawn{sleep 1;sleep 1;if (hasInterface) then { waitUntil {!isNull player}; if (local _this) then {player setvariable ["UAV",blackfishcas];  player addaction ["BLACKFISH - GUNNING", "pa\Blackfish_enter.sqf"]; click = true; player addAction ["BLACKFISH - WAYPOINTING", "pa\Blackfish_selectwp.sqf",nil,0];};};};
-		
+
 	2. place flying blackfish CAS with this in init:
 		this lockTurret [[0],true];
 		this lockdriver true; 
@@ -28,7 +28,20 @@
 	 if (isserver) then {this attachto [blackfishcas,[0,-1.5,-6.5]]; this engineon true; this lock true; {deletevehicle _x}foreach (crew this)}; 
 	
 	8. Rename the addaction strings in UAV operator's init, replacing BLACKFISH with AC-130
-	   e.g. "BLACKFISH - WAYPOINTING" becomes "AC-130 - WAYPOINTING"
+		   e.g. "BLACKFISH - WAYPOINTING" becomes "AC-130 - WAYPOINTING"
+	
+	OPTIONAL 2: add a script which makes the blackfish bullets land on the crosshair rather than all the way to the side
+	9. change UAV operator's init to this:
+	_meh1 = this spawn{sleep 1;sleep 1;if (hasInterface) then { waitUntil {!isNull player}; if (local _this) then {player setvariable ["UAV",blackfishcas];  player addaction ["BLACKFISH - GUNNING", "pa\Blackfish_enter.sqf"]; click = true; player addAction ["BLACKFISH - WAYPOINTING", "pa\Blackfish_selectwp.sqf",nil,0];[blackfishcas, true] call pa_fnc_DisableInheritedVelocity;};};};
+	
+	10. make sure you have added in description.ext this code. It will be in the code block: class PA { --- functions go in here --- }
+	   class DisableInheritedVelocity
+        {
+            file = "pa";
+            class DisableInheritedVelocity{};
+        };
+		
+	11. make sure you have the file in \pa folder:  fn_DisableInheritedVelocity.sqf
 */
 
 if (!click) exitWith {openMap true;};
