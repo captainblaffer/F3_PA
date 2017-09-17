@@ -13550,7 +13550,7 @@ class Mission
 			flags=2;
 			class Attributes
 			{
-				init="call{this lockTurret [[0],true];" \n "this lockdriver true; " \n "if (isserver) then {[(getpos this),this] execVM ""pa\Blackfish_setwp.sqf""};}";
+				init="call{this lockTurret [[0],true];" \n "this lockdriver true; " \n "if (isserver) then {[(getpos this),this] execVM ""pa\Blackfish_setwp.sqf""}; this setFeatureType 2;}";
 				name="blackfishcas";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
