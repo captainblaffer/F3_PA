@@ -317,13 +317,14 @@ sleep _waitingPeriod;
  
 
 //delete and re-cache when no players near
-[_unitGroup,_spawndistance,_remainingtoattack,_initString,_centerpos,_waitingPeriod]spawn{
+[_unitGroup,_f3gear,_spawndistance,_remainingtoattack,_initString,_centerpos,_waitingPeriod]spawn{
 	_unitGroup = _this select 0;
-	_spawndistance = _this select 1;
-	_remainingtoattack = _this select 2;
-	_initString = _this select 3;
-	_centerpos = _this select 4;
-	_waitingPeriod = _this select 5;
+	_f3gear = _this select 1;
+	_spawndistance = _this select 2;
+	_remainingtoattack = _this select 3;
+	_initString = _this select 4;
+	_centerpos = _this select 5;
+	_waitingPeriod = _this select 6;
 	_alivedudes = [];
 	_uncachedistance = _spawndistance + 100 + (0.33 * _spawndistance);
 	
@@ -339,7 +340,7 @@ sleep _waitingPeriod;
 	
 	if (count _alivedudes > _remainingtoattack) then {
 		_unit = _alivedudes select 0;
-		[_unit,_spawndistance,_remainingtoattack,_initString] execVM "murk\murk_building.sqf";
+		[_unit,_f3gear,_spawndistance,_remainingtoattack,_initString] execVM "murk\murk_building.sqf";
 	} else {
 		//delete group if they already started to leavebuilding.
 		{
