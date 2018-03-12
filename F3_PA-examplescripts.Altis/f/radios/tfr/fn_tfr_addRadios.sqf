@@ -40,7 +40,7 @@ if(_typeOfUnit != "NIL") then {
 
 
       // Set the list of units that get a rifleman's radio
-      _rifradio = ["ar","aar","rat","samag","mmgag","hmgag","matag","hatag","mtrag","sp","r","car","smg","gren","dmr"];
+      _rifradio = ["ar","aar","rat","samag","mmgag","hmgag","matag","hatag","mtrag","sp","r","car","smg","gren","dm"];
 
       // Set the list of units that get a shortrange radio
       _shortrange = ["co", "dc", "ftl", "m", "samg", "mmgg", "matg", "sn", "mtrg"];
