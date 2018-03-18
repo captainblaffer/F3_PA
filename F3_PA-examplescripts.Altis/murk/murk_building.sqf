@@ -10,7 +10,7 @@
 // Usage:
 //      Unit (leader of group): nul = [this,F3GEAR,SPAWNDISTANCE,REMAININGTOATTACK,"SL INIT"] execVM "murk\murk_building.sqf";
 //            
-// Example: nul = [this,300,5] execVM "murk\murk_building.sqf"; ---- Will spawn the editor units when players get within 300m of group's center, units will hold position until 5 soldiers remaining. then start patrolling.
+// Example: nul = [this,true,300,5] execVM "murk\murk_building.sqf"; ---- Will spawn the editor units when players get within 300m of group's center, units will hold position until 5 soldiers remaining. then start patrolling.
 // -----------------------------------------------------------------------------------------------------
 // V1 release - captainblaffer
  
