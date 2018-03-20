@@ -3013,7 +3013,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1.4807576;
+														value=1;
 													};
 												};
 												class Item1
