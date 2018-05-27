@@ -42,21 +42,21 @@ _veh_per_magazine_time = 4;	//seconds per magazine reload
 
 _hel_maxDistance = 10;
 _hel_maxHeight = 5;
-_hel_serviceStartDelay = 8;
+_hel_serviceStartDelay = 25;
 _hel_per_fuel_time = 0.2;
 _hel_per_repair_time = 0.4;
 _hel_per_magazine_time = 4;
 
 _pla_maxDistance = 8;
 _pla_maxHeight = 6;
-_pla_serviceStartDelay = 10;
+_pla_serviceStartDelay = 15;
 _pla_per_fuel_time = 0.4;
 _pla_per_repair_time = 0.8;
 _pla_per_magazine_time = 8;
 
 _uav_maxDistance = 6;
 _uav_maxHeight = 2;
-_uav_serviceStartDelay = 8;
+_uav_serviceStartDelay = 15;
 _uav_per_fuel_time = 0.4;
 _uav_per_repair_time = 0.8;
 _uav_per_magazine_time = 8;
