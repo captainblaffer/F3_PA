@@ -36,7 +36,7 @@ case "g":
 	};
 	// LOADOUT: MEDIUM
 	if (_loadout == 1) then {
-		_unit addBackpack _bagmedium;
+		_unit addBackpack _bagsmall;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
 		(unitBackpack _unit) addMagazineCargoGlobal [_glmag, 2];

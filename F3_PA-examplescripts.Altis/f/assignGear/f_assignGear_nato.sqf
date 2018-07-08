@@ -49,7 +49,7 @@
 //		v_car		- car/4x4
 //		v_tr		- truck
 //		v_ifv		- ifv
-//		v_hel		- heli
+//		v_hel		- helo
 //
 //		crate_small	- small ammocrate
 //		crate_med	- medium ammocrate
@@ -62,7 +62,6 @@
 // ATTACHMENTS - PRIMARY
 _attach1 = "acc_pointer_IR";	// IR Laser
 _attach2 = "acc_flashlight";	// Flashlight
-_attach3 = "ACE_acc_pointer_green";	// ace Laser
 
 _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
@@ -75,7 +74,7 @@ _bipod1 = "bipod_01_F_snd";		// Default bipod
 _bipod2 = "bipod_02_F_blk";		// Black bipod
 
 // Default setup
-_attachments = [_attach3,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
+_attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
 
 // [] = remove all
 // [_attach1,_scope1,_silencer] = remove all, add items assigned in _attach1, _scope1 and _silencer1
@@ -242,7 +241,7 @@ _diver = ["div"];
 _pilot = ["pp","pcc","pc"];
 _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
-_specOp = ["dc"];
+_specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
@@ -897,6 +896,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
 		_unit addItemCargoGlobal [_firstaid,6];
 	};
+
 // CARGO: HELO -
 	case "v_hel":
 	{
