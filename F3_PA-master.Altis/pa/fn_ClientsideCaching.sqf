@@ -1,5 +1,5 @@
 /*
-//player caching 
+//player caching
 	_units = ["UnitNATO_CO_P1","UnitNATO_CO_P2","UnitNATO_CO_P3","UnitNATO_CO_PC","UnitNATO_CO","UnitNATO_CO_EN","UnitNATO_CO_FAC"] select {isNil _x};
 	_sNeeds = (player in _units);
 	[{[_this select 0] call cb_fnc_playerCaching;}, 5, _sNeeds] call CBA_fnc_addPerFrameHandler;
@@ -16,19 +16,19 @@
 private ["_checkDist","_cached"];
 _checkDist = getObjectViewDistance select 0; //base check dist on player settings.. was using 700 myself
 
-	// cache dead stuff 
+	// cache dead stuff
 	{
-		if (_x distance2D player < _checkDist)then{_x hideobject false; _x enablesimulation true;}else{_x hideobject true; _x enablesimulation false;}; 
+		if (_x distance2D player < _checkDist)then{_x hideobject false; _x enablesimulation true;}else{_x hideobject true; _x enablesimulation false;};
 	}foreach alldead; //alldeadmen; //playableunits - [player] +
-	
-	//allmisssionobjects "all" "" 
+
+	//allmisssionobjects "all" ""
 //"SmokeShell" "GroundWeaponHolder","WeaponHolderSimulated" "Ruins_F"  "Ruins"
 
-	
-	
+
+
 	{
 		if (!isplayer leader _x) then { //dont cache player groups
-		
+
         _cached = _x getvariable ["c_cached", false];
 		leader _x hideobject false; leader _x enablesimulation true; // always uncache leader in case the old leader died
 		if (leader _x distance2D player < _checkDist)then{
@@ -46,12 +46,12 @@ _checkDist = getObjectViewDistance select 0; //base check dist on player setting
 			}foreach units _x - [leader _x];
 			};
 		};
-		
+
 		};
-		
-	}foreach pa_AIGroups; 
-	
-	
+
+	}foreach pa_AIGroups;
+
+
 /*
 	//cache vehicle wrecks, used to be alive vehs?
 	{
@@ -65,6 +65,6 @@ _checkDist = getObjectViewDistance select 0; //base check dist on player setting
 		};
 		};
 		if (_x distance2D player < _checkDist)then{_x hideobject false; _x enablesimulation true;}else{if ({alive _x} count crew _x == 0) then{_x hideobject true; _x enablesimulation false;}};
-		
+
 	}foreach alldead - alldeadmen; //vehicles +
 */

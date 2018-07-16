@@ -75,11 +75,11 @@ _notAlone = false;
 if (isNil "tpAction" && _notAlone) then {
 	["JIP",["Teleport to Group available"]] call BIS_fnc_showNotification;
 	tpAction = player addAction ["<t color='#dddd00'>Teleport to Group", "pa\jipTeleport.sqf",[],6,true,false,"","_target == player"];
-	[tpAction,player] spawn 
+	[tpAction,player] spawn
 	{
 		private ["_startPos"];
 		_startPos = getpos (_this select 1);
-		while {_startPos distance getpos (_this select 1) < 100 && alive player} do 
+		while {_startPos distance getpos (_this select 1) < 100 && alive player} do
 		{
 			sleep 5;
 		};

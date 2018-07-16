@@ -10,7 +10,7 @@ sleep 3;
 // ====================================================================================
 
 // CARRY OUT CLEANUP PROCEDURE, FREQUENCY SETUP AND RADIO HANDOUT
-// Clear the unit's inventory of any added radios, just in case the defaults change 
+// Clear the unit's inventory of any added radios, just in case the defaults change
 // or a mistake is made with loadouts. Then, set the frequency network up according
 // to the settings in acre_settings.sqf and assign radios depending on unit loadout.
 

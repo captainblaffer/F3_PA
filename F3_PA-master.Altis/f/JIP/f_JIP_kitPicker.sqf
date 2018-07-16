@@ -23,11 +23,11 @@ KitPickInit =
 
     _idx = COMBO lbAdd "Engineer (no repair)"; COMBO lbSetData [_idx, "eng"];
     COMBO lbAdd "----";
-	
+
     _idx = COMBO lbAdd "Rifleman"; COMBO lbSetData [_idx, "r"];
     _idx = COMBO lbAdd "Carabineer"; COMBO lbSetData [_idx, "car"];
 	_idx = COMBO lbAdd "Submachinegunner"; COMBO lbSetData [_idx, "smg"];
-	
+
     _sel = player getVariable "KitPicker_Selection";
     if (!isNil '_sel') then
     {

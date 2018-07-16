@@ -918,7 +918,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_glsmokewhite, 2];
 		_unit addItemCargoGlobal [_firstaid,4];
 	};
-	
+
 // CRATE: Small, ammo for 1 fireteam
 	case "crate_small":
 {
