@@ -70,7 +70,7 @@ if(isServer) then {
 
 // ====================================================================================
 
-// F3 - Automatic Body Removal 
+// F3 - Automatic Body Removal
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // PA NOTE: Don't enable this, feature is replaced by A3 bodyremoval defined in description.ext
 
@@ -114,7 +114,7 @@ if(isServer) then {
 // F3 - AI Skill Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-// [] execVM "f\setAISKill\f_setAISkill.sqf";
+// [] execVM "f\setAISkill\f_setAISkill.sqf";
 // f_var_civAI = independent; // Optional: The civilian AI will use this side's settings
 
 // ====================================================================================
@@ -196,14 +196,14 @@ f_wound_extraFAK = 2;
 // Note: if you want respawn, go to description.ext and remove "f_spectator" from respawnTemplates[]
 // Note: respawn_west etc. markers are mandatory. When not using respawn, place these markers somewhere players will not go
 f_var_JIP_JIPMenu = true;		// Do JIP players get the JIP menu?
-f_var_JIP_RespawnMenu = false;	// Do respawning players get the JIP menu? 
+f_var_JIP_RespawnMenu = false;	// Do respawning players get the JIP menu?
 f_var_JIP_RemoveCorpse = false;	// Remove the old corpse of respawning players?
 f_var_JIP_Spectate = false;		// JIP players go into spectate straight away?
 
 // WARNING: DO NOT DISABLE THIS COMPONENT
 if (hasInterface) then {
 	[]spawn {
-		waitUntil {sleep 0.1; !isNull player}; 
+		waitUntil {sleep 0.1; !isNull player};
 		player addEventHandler ["killed", "['F_ScreenSetup'] call BIS_fnc_blackOut"];
 	};
 };
@@ -216,7 +216,7 @@ if (hasInterface) then {
 if (!isserver && hasInterface) then { //run on all player clients incl. player host and excl. headless clients
 
 	[]spawn {
-	waitUntil {sleep 0.1; !isNull player}; 
+	waitUntil {sleep 0.1; !isNull player};
 	waitUntil{!isNil "pa_param_cscaching"};
 		if (pa_param_cscaching == 1) then {
 			handle_pacaching2 = [{[] call pa_fnc_CscGroupmanagement;}, 30] call CBA_fnc_addPerFrameHandler;
@@ -241,4 +241,4 @@ if (!isserver && hasInterface) then { //run on all player clients incl. player h
 
 // WS - AI Flashlights
 // Credits: Wolfenswan
-// [] execVM "pa\forceFlashLightAI.sqf";
+// [] execVM "pa\forceFlashlightAI.sqf";

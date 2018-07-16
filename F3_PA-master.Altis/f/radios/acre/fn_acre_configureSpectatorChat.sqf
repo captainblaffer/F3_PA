@@ -11,7 +11,7 @@ _unit = player;
 // ====================================================================================
 
 // SET SPECTATOR MODE
-// If the player is alive and hence not a JIP player, the spectator voice chat will be 
+// If the player is alive and hence not a JIP player, the spectator voice chat will be
 // disabled. If the player is dead, and hence a JIP player that hasn't selected an
 // active slot, spectator chat will be enabled.
 

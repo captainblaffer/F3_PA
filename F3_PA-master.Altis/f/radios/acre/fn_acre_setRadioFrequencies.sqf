@@ -16,7 +16,7 @@ _unit = player;
 
 // If frequency splitting is not disabled in the settings
 if(!f_radios_settings_acre_disableFrequencySplit) then {
-  
+
   // Set offsets for each side
   _westOffset = 0.2;
   _eastOffset = 0.4;
@@ -76,7 +76,7 @@ if(!f_radios_settings_acre_disableFrequencySplit) then {
       _srFreq = ((2400) + _x);
       _srFrequencies set [_x - 1, _srFreq];
     };
-  
+
 };
 
 // ====================================================================================
@@ -91,6 +91,6 @@ _ret = ["ACRE_PRC148", _lrFrequencies] call acre_api_fnc_setDefaultChannels;
 _ret = ["ACRE_PRC152", _lrFrequencies] call acre_api_fnc_setDefaultChannels;
 
 // Short-range frequencies
-_ret = ["ACRE_PRC343", _srFrequencies] call acre_api_fnc_setDefaultChannels;   
+_ret = ["ACRE_PRC343", _srFrequencies] call acre_api_fnc_setDefaultChannels;
 
 // ====================================================================================

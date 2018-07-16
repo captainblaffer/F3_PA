@@ -1,18 +1,18 @@
 // F3 - Spectator Script
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
-// params 
+// params
 _this spawn {
 _unit = [_this, 0, player,[objNull]] call BIS_fnc_param;
 _oldUnit = [_this, 1, objNull,[objNull]] call BIS_fnc_param;
 _forced = [_this, 4, false,[false]] call BIS_fnc_param;
-_isJIP = false; 
+_isJIP = false;
 if (isNil "f_var_JIP_Spectate") then {f_var_JIP_Spectate = false}; // JIP players go into spectate straight away?
 
 // if they are jip, these are null
 if(isNull _unit ) then {_unit = cameraOn;_isJIP=true;};
 // escape the script if you are not a seagull unless forced
-if (typeof _unit != "seagull" && (isnull _oldUnit && (!f_var_JIP_Spectate || time < 10)) || !hasInterface) ExitWith { ["F_ScreenSetup"] call BIS_fnc_blackIn;}; 
+if (typeof _unit != "seagull" && (isnull _oldUnit && (!f_var_JIP_Spectate || time < 10)) || !hasInterface) ExitWith { ["F_ScreenSetup"] call BIS_fnc_blackIn;};
 // disable this to instantly switch to the spectator script.
 //waituntil {missionnamespace getvariable ["BIS_fnc_feedback_allowDeathScreen",true] || isNull (_oldUnit) || _isJIP};
 
@@ -42,7 +42,7 @@ if (!isnil "handle_pacaching1") then {
 		{
 			_x hideobject false; _x enablesimulation true;
 		}foreach units _x;
-	}foreach allgroups; 
+	}foreach allgroups;
 };
 // Create a Virtual Unit to act as our player to make sure we get to keep Draw3D
 if(isNil "f_cam_VirtualCreated") then

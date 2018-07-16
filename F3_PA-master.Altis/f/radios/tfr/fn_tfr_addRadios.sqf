@@ -68,7 +68,7 @@ if(_typeOfUnit != "NIL") then {
           _unit linkItem _radio3;
         };
       };
-      
+
       if ( !(_typeOfUnit in _rifradio) && !(_typeOfUnit in _shortrange) && !(_typeOfUnit in _specialist) ) then {
         _unit linkItem _radio3;
       };

@@ -222,7 +222,7 @@ class Params
 
 // ============================================================================================
 
-	
+
 // ============================================================================================
 
 // F3 - Mission Timer/Safe Start
@@ -564,7 +564,7 @@ class CfgFunctions
 		#include "f\spect\functions.hpp"
 
 	};
-	
+
 	class PA // Defines the "owner"
 	{
 		class ClientsideCaching

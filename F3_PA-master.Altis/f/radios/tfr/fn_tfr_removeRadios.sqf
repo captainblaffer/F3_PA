@@ -12,7 +12,7 @@ _vanillaRadio = "itemRadio";
 // ====================================================================================
 
 // REMOVE ALL RADIOS
-// Check all items, removing any TFR radios, using the TFR API call to distinguish 
+// Check all items, removing any TFR radios, using the TFR API call to distinguish
 // between radios and normal items.
 
 { _isRadio = _x call TFAR_fnc_isRadio; if(_isRadio) then {_unit unlinkItem _x}; } foreach items _unit;
