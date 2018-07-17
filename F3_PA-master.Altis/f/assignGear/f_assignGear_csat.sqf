@@ -1016,6 +1016,7 @@ if !(_isMan) exitWith {};
 
 _unit selectweapon primaryweapon _unit;
 
+if (_isMan) then { // DO NOT DELETE THIS LINE
 // ============ SELECT APPEARANCE OF SPAWNED UNIT (OPTIONAL) ===============
 // Since it'd be a bit weird to have, say, Persians stand in for Chernarus rebels, you
 // can reset their facial appearance to something more fitting. Just uncomment *one*
@@ -1072,3 +1073,6 @@ _unit selectweapon primaryweapon _unit;
 // ACE "voice" (silence)
 // _the_voice = ["ACE_NoVoice"] call BIS_fnc_selectRandom;
 // [_unit, _the_voice] remoteExecCall ["setSpeaker", 0];
+
+} // DO NOT DELETE THIS LINE
+
