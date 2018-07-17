@@ -1015,3 +1015,60 @@ if !(_isMan) exitWith {};
 // ENSURE UNIT HAS CORRECT WEAPON SELECTED ON SPAWNING
 
 _unit selectweapon primaryweapon _unit;
+
+// ============ SELECT APPEARANCE OF SPAWNED UNIT (OPTIONAL) ===============
+// Since it'd be a bit weird to have, say, Persians stand in for Chernarus rebels, you
+// can reset their facial appearance to something more fitting. Just uncomment *one*
+// of the _thehead assignments corresponding to the face set you want and the command at
+// the end. You can of course mix and match the various example sets here, or mush them
+// all together to make a diverse force.
+
+//_the_head = ["AfricanHead_A3_01", "AfricanHead_A3_02", "AfricanHead_A3_03"] call BIS_fnc_selectRandom;
+//_the_head = ["AsianHead_A3_01", "AsianHead_A3_02", "AsianHead_A3_03"] call BIS_fnc_selectRandom;
+//_the_head = ["GreekHead_A3_01", "GreekHead_A3_02", "GreekHead_A3_03", "GreekHead_A3_04", "GreekHead_A3_05", "GreekHead_A3_06", "GreekHead_A3_07", "GreekHead_A3_08", "GreekHead_A3_09"] call BIS_fnc_selectRandom;
+// ==== If you also want faces with camo-paint, you can add these ===
+// "GreekHead_A3_10_a", "GreekHead_A3_10_l", "GreekHead_A3_10_sa"
+// the _a, _l, _sa stands for arid, lush and semi-arid camo, respectively
+//_the_head = ["PersianHead_A3_01", "PersianHead_A3_01", "PersianHead_A3_03"] call BIS_fnc_selectRandom;
+// === Camo patterns, same scheme as above ===
+// "PersianHead_A3_04_a", "GreekHead_A3_04_l", "GreekHead_A3_04_sa"
+//_the_head = ["WhiteHead_01", "WhiteHead_02", "WhiteHead_03", "WhiteHead_04", "WhiteHead_05", "WhiteHead_06", "WhiteHead_07", "WhiteHead_08", "WhiteHead_09", "WhiteHead_10", "WhiteHead_11", "WhiteHead_12", "WhiteHead_13", "WhiteHead_14", "WhiteHead_15", "WhiteHead_16", "WhiteHead_17", "WhiteHead_18", "WhiteHead_19", "WhiteHead_20", "WhiteHead_21"] call BIS_fnc_selectRandom;
+// === Apex DLC additional faces ===
+// "TanoanHead_A3_01", "TanoanHead_A3_02", "TanoanHead_A3_03", "TanoanHead_A3_04", "TanoanHead_A3_05", "TanoanHead_A3_06", "TanoanHead_A3_07", "TanoanHead_A3_08"
+// "AsianHead_A3_04", "AsianHead_A3_05", "AsianHead_A3_06", "AsianHead_A3_07", "AsianHead_A3_08"
+// === Laws of War additional faces ===
+// "GreekHead_A3_11", "GreekHead_A3_12", "GreekHead_A3_13", "GreekHead_A3_14"
+// WhiteHead_23
+// === TacOps additional faces ===
+// Barklem, Mavros, Sturrock
+//
+// Now assign the picked face
+//[_unit, _the_head] remoteExec ["setFace", 0, _unit];
+
+// ============ SELECT VOICE OF SPAWNED UNIT (OPTIONAL) ===============
+// Same as above, but for voicepacks
+// Altian (Greek) accented English
+// _the_voice = ["Male01GRE",  "Male02GRE",  "Male03GRE",  "Male04GRE",  "Male05GRE",  "Male06GRE"] call BIS_fnc_selectRandom;
+// American English
+// _the_voice = ["Male01ENG",  "Male02ENG",  "Male03ENG",  "Male04ENG",  "Male05ENG",  "Male06ENG",  "Male07ENG",  "Male08ENG",  "Male09ENG",  "Male10ENG",  "Male11ENG",  "Male12ENG"] call BIS_fnc_selectRandom;
+// British English
+// _the_voice = ["Male01ENGB",  "Male02ENGB",  "Male03ENGB",  "Male04ENGB",  "Male05ENGB",] call BIS_fnc_selectRandom;
+// Farsi (Persian)
+// _the_voice = ["Male01PER",  "Male02PER",  "Male03PER"] call BIS_fnc_selectRandom;
+// Apex DLC voices
+// Chinese (Madarin)
+// _the_voice = ["Male01CHI",  "Male02CHI",  "Male03CHI"] call BIS_fnc_selectRandom;
+// French
+// _the_voice = ["Male01FRE",  "Male02FRE",  "Male03FRE"] call BIS_fnc_selectRandom;
+// French accented English
+// _the_voice = ["Male01ENGFRE",  "Male02ENGFRE"] call BIS_fnc_selectRandom;
+// RHS modpack voices
+// Russian
+// _the_voice = ["RHS_Male01RUS",  "RHS_Male02RUS",  "RHS_Male03RUS",  "RHS_Male04RUS",  "RHS_Male05RUS"] call BIS_fnc_selectRandom;
+// Czech
+// _the_voice = ["RHS_Male01CZ",  "RHS_Male02CZ",  "RHS_Male03CZ",  "RHS_Male04CZ",  "RHS_Male05CZ"] call BIS_fnc_selectRandom;
+// Female American English
+// _the_voice = ["RHS_Female01ENG"] call BIS_fnc_selectRandom;
+// ACE "voice" (silence)
+// _the_voice = ["ACE_NoVoice"] call BIS_fnc_selectRandom;
+// [_unit, _the_voice] remoteExecCall ["setSpeaker", 0];
