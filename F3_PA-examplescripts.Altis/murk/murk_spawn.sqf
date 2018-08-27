@@ -404,6 +404,13 @@ _fnc_spawnUnit = {
 
         private ["_i"]; _i = 0;
  
+ 	// Delete all existing waypoints
+	// This fixes the "Mysterious [0,0] (bottom left corner of the map) WP
+	// from nowhere" bug
+	while {(count (waypoints _newGroup)) > 0} do {
+		deleteWaypoint ((waypoints _newGroup) select 0);
+	};
+
         //Let's return them their waypoints
         {
                 //diag_log format ["All data : %1",_x];
