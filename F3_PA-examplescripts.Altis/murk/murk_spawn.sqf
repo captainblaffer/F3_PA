@@ -60,9 +60,22 @@ _spawndelay = if (_countThis >= 5) then { _this select 4; } else { 1 }; // Optio
 _initString = if (_countThis >= 6) then { _this select 5; } else { "" }; // Optional
 _bodyRemove = if (_countThis >= 7) then { _this select 6; } else { 360 }; // Optional
 _autoDeleteDist = if (_countThis >= 8) then { _this select 7; } else { 0 }; // Optional
+_debug = true;
  
 // The object (trigger, whatever) the unit is synchronized to hold the trigger variable
 _triggerObject = (synchronizedObjects _unit) select 0;
+
+if (_debug) then {
+ if (isnil "_triggerObject") exitwith {
+ systemchat format ["%1 _triggerObject is not defined! exiting murk",_unit];
+
+_mname = format ["mstestmrk_%1",_unit];
+createMarker [_mname,(position _unit)];
+_mname setMarkercolor "ColorRed";
+_mname setMarkerShape "ICON";
+_mname setMarkerType "mil_dot";
+ };
+};
 _triggerObject setVariable ["murk_spawn",false,false];
  
 // --  Delete the unit (this is always done ASAP)  -- //
