@@ -5,13 +5,13 @@
 // RADIO STRUCTURE
 
 // Whether long range radios are automatically added
-tf_no_auto_long_range_radio = true;
+TFAR_giveLongRangeRadioToGroupLeaders = false;
 
 // Should a side use the same short-wave frequencies
-tf_same_sw_frequencies_for_side = true;
+TFAR_SameSRFrequenciesForSide = true;
 
 // Should a side use the same long-wave frequencies
-tf_same_lr_frequencies_for_side = true;
+TFAR_SameLRFrequenciesForSide = true;
 
 // Whether any radios should be assigned at all, to any units
 // TRUE = Disable radios for all units

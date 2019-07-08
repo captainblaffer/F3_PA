@@ -14,17 +14,17 @@ _typeOfUnit = _unit getVariable ["f_var_assignGear", "NIL"];
 
 switch ((side player)) do { //longrange, shortrange, rifradio
     case (west): {
-      _radio1 = TF_defaultWestBackpack;
-      _radio2 = TF_defaultWestPersonalRadio;
-      _radio3 = TF_defaultWestRiflemanRadio;};
+      _radio1 = TFAR_DefaultRadio_Backpack_West;
+      _radio2 = TFAR_DefaultRadio_Personal_West;
+      _radio3 = TFAR_DefaultRadio_Rifleman_West;};
     case (east): {
-      _radio1 = TF_defaultEastBackpack;
-      _radio2 = TF_defaultEastPersonalRadio;
-      _radio3 = TF_defaultEastRiflemanRadio;};
+      _radio1 = TFAR_DefaultRadio_Backpack_East;
+      _radio2 = TFAR_DefaultRadio_Personal_East;
+      _radio3 = TFAR_DefaultRadio_Rifleman_East;};
     default {
-      _radio1 = TF_defaultGuerBackpack;
-      _radio2 = TF_defaultGuerPersonalRadio;
-      _radio3 = TF_defaultGuerRiflemanRadio;};
+      _radio1 = TFAR_DefaultRadio_Backpack_Independent;
+      _radio2 = TFAR_DefaultRadio_Personal_Independent;
+      _radio3 = TFAR_DefaultRadio_Rifleman_Independent;};
 };
 
 // ====================================================================================
@@ -68,7 +68,7 @@ if(_typeOfUnit != "NIL") then {
           _unit linkItem _radio3;
         };
       };
-      
+
       if ( !(_typeOfUnit in _rifradio) && !(_typeOfUnit in _shortrange) && !(_typeOfUnit in _specialist) ) then {
         _unit linkItem _radio3;
       };
