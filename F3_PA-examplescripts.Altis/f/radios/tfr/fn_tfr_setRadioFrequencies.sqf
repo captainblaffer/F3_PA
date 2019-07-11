@@ -17,7 +17,7 @@ https://github.com/michail-nikolaev/task-force-arma-3-radio/blob/master/addons/c
     4: Encryption code <STRING>
     5: Additional active channel <NUMBER>
     6: Additional active channel stereo mode <NUMBER>
-    7: Empty <NIL>
+    7: Owner <NIL> (DO NOT USE HERE, keep it set to NIL)
     8: Speaker mode <NUMBER>
     9: turned on <BOOL>
 */
