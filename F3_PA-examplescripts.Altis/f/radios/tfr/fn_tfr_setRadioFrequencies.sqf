@@ -21,11 +21,11 @@ https://github.com/michail-nikolaev/task-force-arma-3-radio/blob/master/addons/c
     8: Speaker mode <NUMBER>
     9: turned on <BOOL>
 */
-TFAR_freq_sr_west = [0, vol, srchans, 0, nil, -1, 0, nil, false, true];
-TFAR_freq_lr_west = [0, vol, lrchans, 0, nil, -1, 0, nil, false, true];
-TFAR_freq_sr_east = [0, vol, srchans, 0, nil, -1, 0, nil, false, true];
-TFAR_freq_lr_east = [0, vol, lrchans, 0, nil, -1, 0, nil, false, true];
-TFAR_freq_sr_independent = [0, vol, srchans, 0, nil, -1, 0, nil, false, true];
-TFAR_freq_lr_independent = [0, vol, lrchans, 0, nil, -1, 0, nil, false, true];
+TFAR_freq_sr_west = [0, _vol, _srchans, 0, nil, -1, 0, nil, false, true];
+TFAR_freq_lr_west = [0, _vol, _lrchans, 0, nil, -1, 0, nil, false, true];
+TFAR_freq_sr_east = [0, _vol, _srchans, 0, nil, -1, 0, nil, false, true];
+TFAR_freq_lr_east = [0, _vol, _lrchans, 0, nil, -1, 0, nil, false, true];
+TFAR_freq_sr_independent = [0, _vol, _srchans, 0, nil, -1, 0, nil, false, true];
+TFAR_freq_lr_independent = [0, _vol, _lrchans, 0, nil, -1, 0, nil, false, true];
 
 // ====================================================================================
