@@ -1,4 +1,4 @@
-//f_items.sqf 
+//f_items.sqf
 //
 // vim: shiftwidth=4 ai smartindent expandtab tabstop=4
 //
@@ -21,11 +21,11 @@ switch _group do {
         _gcontents = [
             // "ACE_MX2A"       // Thermals
             //,"ACE_Vector"     // NV
-            //,"ACE_Vector_day"  
+            //,"ACE_Vector_day"
             //,"ACE_Yardage450"
             "Binocular"
             ,"Laserbatteries" // Needed for *some* RF
-            //,"Laserdesignator" // NV (same for all variants), needs batteries   
+            //,"Laserdesignator" // NV (same for all variants), needs batteries
             //,"Laserdesignator_01_khk_F"
             //,"Laserdesignator_02"
             //,"Laserdesignator_02_ghex_F"
@@ -138,24 +138,24 @@ switch _group do {
             // ILBE radios with whip antenna
              "tfw_ilbe_a_wd"
             ,"tfw_ilbe_a_coy"
-            ,"tfw_ilbe_a_d" 
+            ,"tfw_ilbe_a_d"
             ,"tfw_ilbe_a_gr"
             // Base TFAR
-            ,"tf_rt1523g_big"
-            ,"tf_rt1523g_big_bwmod"
-            ,"tf_rt1523g_big_bwmod_tropen"
-            ,"tf_rt1523g_big_rhs"
-            ,"tf_rt1523g_black"
-            ,"tf_rt1523g_fabric"
-            ,"tf_rt1523g_green"
-            ,"tf_rt1523g_sage"
+            ,"TFAR_rt1523g_big"
+            ,"TFAR_rt1523g_big_bwmod"
+            ,"TFAR_rt1523g_big_bwmod_tropen"
+            ,"TFAR_rt1523g_big_rhs"
+            ,"TFAR_rt1523g_black"
+            ,"TFAR_rt1523g_fabric"
+            ,"TFAR_rt1523g_green"
+            ,"TFAR_rt1523g_sage"
             // Short Range
-            //,"tf_anprc148jem"
-            ,"tf_anprc152"
-            //,"tf_anprc154"
-            //,"tf_rf7800str"
+            //,"TFAR_anprc148jem"
+            ,"TFAR_anprc152"
+            //,"TFAR_anprc154"
+            //,"TFAR_rf7800str"
             // Programmer
-            ,"tf_microdagr"
+            ,"TFAR_microdagr"
         ];
     };
     case "univests": {
