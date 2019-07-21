@@ -20627,7 +20627,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_ASL = group this; [""g"",this] call f_fnc_assignGear;";
+						init="GrpNATO_ASL = group this; [""gren"",this] call f_fnc_assignGear;";
 						name="UnitNATO_A2_G";
 						description="NATO Alpha 2 Grenadier";
 						isPlayable=1;
@@ -21148,7 +21148,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_BSL = group this; [""g"",this] call f_fnc_assignGear;";
+						init="GrpNATO_BSL = group this; [""gren"",this] call f_fnc_assignGear;";
 						name="UnitNATO_B2_G";
 						description="NATO Bravo 2 Grenadier";
 						isPlayable=1;
@@ -21626,7 +21626,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_CSL = group this; [""g"",this] call f_fnc_assignGear;";
+						init="GrpNATO_CSL = group this; [""gren"",this] call f_fnc_assignGear;";
 						name="UnitNATO_C2_G";
 						description="NATO Charlie 2 Grenadier";
 						isPlayable=1;
@@ -22146,7 +22146,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_DSL = group this; [""g"",this] call f_fnc_assignGear;";
+						init="GrpNATO_DSL = group this; [""gren"",this] call f_fnc_assignGear;";
 						name="UnitNATO_D2_G";
 						description="NATO Delta 2 Grenadier";
 						isPlayable=1;
@@ -22667,7 +22667,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_ESL = group this; [""g"",this] call f_fnc_assignGear;";
+						init="GrpNATO_ESL = group this; [""gren"",this] call f_fnc_assignGear;";
 						name="UnitNATO_E2_G";
 						description="NATO Echo 2 Grenadier";
 						isPlayable=1;
