@@ -51,7 +51,9 @@ enableDebugConsole = 1;
 respawn = 3; //Suggested NOT to change this
 respawndelay = 4;
 respawnOnStart = 0;
-respawnTemplates[] = {"f_JIP","f_spectator"};	// remove "f_spectator" when using respawn.
+// Uncomment the first line (delete the second) for Spectator-on-Respawn
+//respawnTemplates[] = {"f_JIP","f_spectator"};
+respawnTemplates[] = {"f_JIP""};
 respawnDialog = 0;
 
 // ============================================================================================
