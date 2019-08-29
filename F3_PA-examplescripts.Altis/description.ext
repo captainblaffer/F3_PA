@@ -53,7 +53,7 @@ respawndelay = 4;
 respawnOnStart = 0;
 // Uncomment the first line (delete the second) for Spectator-on-Respawn
 //respawnTemplates[] = {"f_JIP","f_spectator"};
-respawnTemplates[] = {"f_JIP""};
+respawnTemplates[] = {"f_JIP"};
 respawnDialog = 0;
 
 // ============================================================================================
