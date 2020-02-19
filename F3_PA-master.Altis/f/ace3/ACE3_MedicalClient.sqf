@@ -14,6 +14,7 @@ _typeOfUnit = player getVariable "f_var_assignGear";
 
 {player addItem "ACE_fieldDressing"} forEach [1,2,3,4,5,6,7,8];
 {player addItem "ACE_morphine"} forEach [1,2,3,4];
+{player addItem "ACE_tourniquet"} forEach [1,2,3,4,5];
 
 if (_typeOfUnit == "m") then
 {
@@ -23,6 +24,7 @@ if (_typeOfUnit == "m") then
 		(unitBackpack player) addItemCargoGlobal ["ACE_morphine", 10];
 		(unitBackpack player) addItemCargoGlobal ["ACE_epinephrine",   10];
 		(unitBackpack player) addItemCargoGlobal ["ACE_bloodIV", 2];
+		(unitBackpack player) addItemCargoGlobal ["ACE_tourniquet", 5];
 	};
 	// BACKPACK: HEAVY
 	if (f_param_backpacks == 2) then {
@@ -30,5 +32,6 @@ if (_typeOfUnit == "m") then
 		(unitBackpack player) addItemCargoGlobal ["ACE_morphine", 15];
 		(unitBackpack player) addItemCargoGlobal ["ACE_epinephrine",   15];
 		(unitBackpack player) addItemCargoGlobal ["ACE_bloodIV", 4];
+		(unitBackpack player) addItemCargoGlobal ["ACE_tourniquet", 10];
 	};
 };
