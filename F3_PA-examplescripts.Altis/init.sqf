@@ -179,7 +179,7 @@ f_var_cachingAggressiveness = 2;
 
 // SWS Config Settings
 // How many extra FirstAidKits (FAKS) each player should receive when using the F3 Simple Wounding System:
-f_wound_extraFAK = 2;
+//f_wound_extraFAK = 2;
 
 [] execVM "f\medical\medical_init.sqf";
 

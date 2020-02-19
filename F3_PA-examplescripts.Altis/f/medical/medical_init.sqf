@@ -31,11 +31,7 @@ call
 		{
 			if (f_var_medical == 2) then
 			{
-				[] execVM "f\ace3\ACE3_MedicalStandardClient.sqf";
-			};
-			if (f_var_medical == 3) then
-			{
-				[] execVM "f\ace3\ACE3_MedicalAdvancedClient.sqf";
+				[] execVM "f\ace3\ACE3_MedicalClient.sqf";
 			};
 		};
 	};

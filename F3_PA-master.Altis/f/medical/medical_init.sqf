@@ -23,20 +23,13 @@ call
 			[player] execVM "f\simplewoundingsystem\init.sqf";
 		};
 	};
-	// ACE Medical
+	// ACE Medical (new, no distinction of Advanced and Standard/Base)
 	if (f_var_medical > 1) exitWith
 	{
 		// If script is being run on a client
 		if (hasInterface) then
 		{
-			if (f_var_medical == 2) then
-			{
-				[] execVM "f\ace3\ACE3_MedicalStandardClient.sqf";
-			};
-			if (f_var_medical == 3) then
-			{
-				[] execVM "f\ace3\ACE3_MedicalAdvancedClient.sqf";
-			};
+			[] execVM "f\ace3\ACE3_MedicalClient.sqf";
 		};
 	};
 };

@@ -204,8 +204,8 @@ class Params
     class f_param_medical
     {
             title = "Medical System";
-            values[] = {0,1,2,3};
-            texts[] = {"Arma 3 Default (Autodetect)","F3 Simple Wounding System","Force ACE3 Simple","Force ACE3 Advanced"};
+            values[] = {0,1};
+            texts[] = {"Arma 3 Default (Autodetect)","F3 Simple Wounding System","Force ACE3"};
             default = 2;
             code = "f_var_medical = %1";
     };
