@@ -472,6 +472,8 @@ class CfgFunctions
 		{
 			// Defines the functions to preInit the compling of the assignGear function used by units.
 			file = "f\assignGear";
+			// If you want to use simple AssignGear, delete the line above and uncomment (remove the //) the line below.
+			//file = "f\assignGear_simple";
 			class assignGear{};
 		};
 		class ace3
