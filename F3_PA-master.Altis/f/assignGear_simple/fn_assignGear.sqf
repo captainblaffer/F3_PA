@@ -21,7 +21,7 @@ if(count _this > 2) then
 // This block will give units insignia on their uniforms, i.e.
 // "CO" or "A1" or the like, from the insignia subdirectory.
 [_unit,_typeofUnit] spawn {
-	#include "f_assignInsignia.sqf"
+	#include "f_assignInsignia.sqf";
 };
 
 // Only run once, where the unit is local
@@ -39,18 +39,18 @@ if (f_var_debugMode == 1) then
 {
   _unit sideChat format ["DEBUG (assignGear.sqf): unit faction: %1",_faction];
 };
-p
+
 // Any unit with a faction of "blu_f" gets a NATO loadout.
 // NOTE: if you use units of other factions, an if-include like the
 // one here may be needed.
 if (_faction == "blu_f") then {
-  #include "f_assignGear_nato.sqf"
+  #include "f_assignGear_nato.sqf";
   _ff = true;
 };
 
 // OPF_F -> CSAT
 if (_faction == "opf_f") then {
-  #include "f_assignGear_csat.sqf"
+  #include "f_assignGear_csat.sqf";
   _ff = true;
 };
 
@@ -63,11 +63,10 @@ if(_faction == "ind_f") then {
 // FIA units can be BLUFOR, OPFOR or INDEPENDENT, the "g"
 // in the faction strings probably stands for guerrilla.
 if (_faction in ["blu_g_f","opf_g_f","ind_g_f"]) then {
-  #include "f_assignGear_fia.sqf"
+  #include "f_assignGear_fia.sqf";
   _ff = true;
 };
 
-private _ff = _unit getVariable ["f_var_assignGear_found_faction"];
-if (!_ff) {
+if (!_ff) then {
    player globalchat format ["DEBUG f\assignGear_simple\fn_assignGear.sqf: Faction '%1' is not known, unit '%2' left untouched.", _faction, _unit];
 };
