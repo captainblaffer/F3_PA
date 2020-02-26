@@ -2,7 +2,7 @@
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
-private ["_group","_badge","_groupBadges","_roleBadge","_unit","_typeofUnit"];
+private ["_group","_badge","_groupBadges","_roleBadge","_unit","_typeofUnit", "_faction"];
 
 _badge = "";
 _unit = _this select 0;
@@ -164,7 +164,7 @@ switch (_faction) do
 // Loop through the groups and match badges to the group _unit belongs to. Due to the groups being variables this requires calling formatted at runtime code.
 
 _group = (group _unit);
-
+diag_log format ["Group of %1 is %2", _unit, _group];
 
 {
 	if(!isnil (_x select 0)) then {
